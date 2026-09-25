@@ -1,77 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pen</title>
-  </head>
-  <body>
-
-    <script src="./script.js"></script>
-  </body>
-</html>
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Les métadonnées pour le navigateur et l'encodage des caractères -->
     <meta charset="UTF-8">
-    <!-- Cette balise est cruciale pour rendre le site responsive sur mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Étudiant en École de Commerce</title>
-    <!-- Lien vers notre fichier de style CSS -->
+    <title>Portfolio - Jules Ledrole | Étudiant en École de Commerce</title>
+    <meta name="description" content="Découvrez le portfolio de Jules Ledrole, étudiant en licence d'éco-gestion à l'ESDHEM. Mes compétences : analyse financière, gestion de projet et stratégie marketing.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- En-tête : contient la présentation courte, l'image et l'appel à l'action -->
     <header>
-        <!-- L'attribut alt est essentiel pour l'accessibilité (lecteurs d'écran) -->
-        <img src="https://via.placeholder.com/150" alt="Portrait professionnel de l'étudiante" class="profile-img">
-        <h1>Ledrole Jules</h1>
+        <nav class="menu">
+            <a href="#competences">Compétences</a>
+            <a href="#formation">Formation</a>
+            <a href="#langues">Langues</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <img src="https://i.postimg.cc/1tgqqGp4/IMG-3437.jpg" alt="Portrait professionnel de l'étudiant" class="profile-img">
+        <h1>Jules Ledrole</h1>
         <p>Étudiant en licence éco-gestion - Passionné par la finance et la stratégie de croissance.</p>
         <a href="#contact" class="btn">Me contacter</a>
+        <a href="CV_Jules_Ledrole.pdf" download class="btn" style="margin-left: 15px;">Télécharger mon CV</a>
     </header>
 
-    <!-- Contenu principal -->
     <main>
-        <!-- Section des 4 compétences -->
         <section id="competences">
             <h2>Mes Compétences</h2>
             <ul class="skills-list">
-                <li>Gestion de Projet </li>
-                <li>Stratégie Marketing</li>
-                <li>Analyse Financière</li>
-                <li>Communication Digitale</li>
+                <li><i class="fas fa-tasks" style="margin-right: 8px;"></i>Gestion de Projet</li>
+                <li><i class="fas fa-bullseye" style="margin-right: 8px;"></i>Stratégie Marketing</li>
+                <li><i class="fas fa-chart-line" style="margin-right: 8px;"></i>Analyse Financière</li>
+                <li><i class="fas fa-laptop" style="margin-right: 8px;"></i>Communication Digitale</li>
             </ul>
         </section>
 
-        <!-- Section des 2 projets -->
+        <section id="formation">
+            <h2>Mon Parcours Académique</h2>
+            <div class="cards-container">
+                <div class="project-card">
+                    <h3>Programme ESDHEM - SKEMA Business School</h3>
+                    <p><strong>Campus de Lille</strong> | <em>En cours</em></p>
+                    <p>Licence Éco-gestion et préparation aux concours d'admission sur titre des grandes écoles de commerce. Enseignements axés sur l'économie, la comptabilité et la stratégie d'entreprise.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Baccalauréat Général</h3>
+                    <p><strong>Lycée de l'Escaut, Valenciennes</strong> | <em>Obtenu en 2025</em></p>
+                    <p>Spécialités : Mathématiques et Sciences et vie de la Terre, obtenu avec mention assez bien.</p>
+                </div>
+            </div>
+        </section>
+      
+        <section id="langues">
+            <h2>Langues</h2>
+            <div class="cards-container">
+                <div class="project-card">
+                    <ul class="star-list">
+                        <li>
+                            <span>Français (Langue maternelle)</span>
+                            <span class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span>Anglais (Niveau B2)</span>
+                            <span class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span>Espagnol (Niveau B2)</span>
+                            <span class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </section>
+
         <section id="projets">
             <h2>Mes Projets</h2>
-            
-            <div class="project-card">
-                <h3>Lancement d'une auto-entreprise</h3>
-                <p>Création du business plan, de l'étude de marché et de la stratégie d'acquisition de clients pour le lancement d'un cabinet indépendant de conseil en gestion de patrimoine.</p>
+            <div class="cards-container">
+                <div class="project-card">
+                    <h3>Lancement d'une auto-entreprise</h3>
+                    <p>Création du business plan, de l'étude de marché et de la stratégie d'acquisition de clients pour le lancement d'un cabinet indépendant de conseil en gestion de patrimoine.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Stage en tant que conseiller en gestion de Patrimoine</h3>
+                    <p>Participation aux rendez-vous clients, recueil des besoins et aide à la rédaction des propositions commerciales pour l'optimisation et la transmission du patrimoine.</p>
+                </div>
             </div>
-            
-            <div class="project-card">
-    <h3>Stage en tant que conseiller en gestion de Patrimoine</h3>
-    <p>Participation aux rendez-vous clients, recueil des besoins et aide à la rédaction des propositions commerciales pour l'optimisation et la transmission du patrimoine.</p>
-</div>
         </section>
     </main>
 
-    <!-- Pied de page : contient le lien de contact -->
     <footer id="contact">
         <h2>Contact</h2>
         <p>Je suis actuellement à la recherche d'un stage de fin d'études pour mettre en pratique mes compétences. </p>
-        <!-- Le lien mailto ouvre directement la messagerie de l'utilisateur -->
-        <a href="mailto:recrutement@exemple.com">Envoyez-moi un e-mail</a>
+        <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="mailto:jules.ledrole@skema.edu" class="btn" style="margin-top: 0; border: 1px solid var(--couleur-principale);">Mon e-mail</a>
+            <a href="https://www.linkedin.com/in/jules-ledrole-1426aa383" target="_blank" class="btn" style="margin-top: 0; border: 1px solid var(--couleur-principale);">Mon profil LinkedIn</a>
+        </div>
     </footer>
 
-    <!-- Lien vers le fichier JavaScript, placé à la fin pour ne pas bloquer le chargement de la page -->
     <script src="script.js"></script>
 </body>
 </html>
-
